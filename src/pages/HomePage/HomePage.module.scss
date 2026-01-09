@@ -1,0 +1,8 @@
+@use "@/styles/includes" as *;
+
+.home {
+	padding-block: toRem(50);
+}
+.home-title {
+	margin-bottom: toRem(13);
+}

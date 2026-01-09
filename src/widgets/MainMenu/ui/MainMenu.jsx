@@ -1,5 +1,6 @@
 import { routes } from '@/app/router'
 import { NavLink } from 'react-router'
+import s from './MainMenu.module.scss'
 
 const createItemsMenu = (routes, basePath) => {
 	let itemsMenu = []
@@ -24,14 +25,14 @@ export function MainMenu() {
 	const itemsMenu = createItemsMenu(routes)
 
 	return (
-		<nav className="menu">
-			<ul className="menu-list">
+		<nav className={s['menu']}>
+			<ul className={s['menu-list']}>
 				{itemsMenu.map((item, index) => (
-					<li key={index} className="menu-item">
+					<li key={index}>
 						<NavLink
 							to={item.path}
 							className={({ isActive }) =>
-								`menu-link ${isActive ? 'active' : ''}`
+								`${s['menu-link']} ${isActive ? s['active'] : ''}`
 							}
 						>
 							{item.label}

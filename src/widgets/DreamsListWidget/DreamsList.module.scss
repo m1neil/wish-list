@@ -1,0 +1,20 @@
+@use "@/styles/includes/" as *;
+
+.dreams {
+}
+
+.dreams-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(toRem(300), 100%), 1fr));
+	gap: toRem(30);
+	border-radius: toRem(8);
+	padding: toRem(16) toRem(12);
+	background-color: #f5f7f9;
+	box-shadow:
+		0 toRem(1) toRem(1) 0 rgba(0, 0, 0, 0.06),
+		0 0 0 toRem(1) rgba(60, 66, 87, 0.08),
+		0 toRem(2) toRem(5) 0 rgba(60, 66, 87, 0.04);
+	&:not(:last-child) {
+		margin-bottom: toRem(20);
+	}
+}

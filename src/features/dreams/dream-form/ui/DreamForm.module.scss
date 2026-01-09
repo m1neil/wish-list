@@ -1,0 +1,10 @@
+@use "@/styles/includes/" as *;
+
+.dream-form {
+	> *:not(:last-child) {
+		margin-bottom: toRem(8);
+	}
+	&:not(:last-child) {
+		margin-bottom: toRem(12);
+	}
+}

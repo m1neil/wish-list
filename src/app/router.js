@@ -1,8 +1,8 @@
 import { MainLayout } from '@/widgets/MainLayout'
 import { frontRoutes } from './frontRoutes'
-import HomePage from '@/pages/HomePage'
-import DreamsPage from '@/pages/DreamsPage'
-import DreamEditPage from '@/pages/DreamEditPage'
+import HomePage from '@/pages/HomePage/HomePage'
+import DreamsPage from '@/pages/DreamsPage/DreamsPage'
+import DreamEditPage from '@/pages/DreamEditPage/DreamEditPage'
 import { createBrowserRouter } from 'react-router'
 import PageNotFound from '@/pages/PageNotFound'
 

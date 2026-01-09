@@ -1,0 +1,13 @@
+@use "@/styles/includes/" as *;
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: toRem(15);
+	margin-top: toRem(20);
+}
+
+.pagination-current {
+	font-weight: 600;
+}

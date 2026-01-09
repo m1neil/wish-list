@@ -1,0 +1,32 @@
+@use "@/styles/includes/" as *;
+
+.dreams {
+	padding-block: toRem(50);
+}
+
+.dreams-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: toRem(15);
+	margin-bottom: toRem(12);
+}
+.dreams-title {
+}
+.dreams-add {
+	flex-shrink: 0;
+}
+.title {
+}
+.dreams-filter {
+	margin-bottom: toRem(20);
+}
+.dreams-label {
+	display: flex;
+	align-items: center;
+	column-gap: toRem(14);
+	justify-content: flex-start;
+}
+.drams-select {
+	flex-basis: 200px;
+}
